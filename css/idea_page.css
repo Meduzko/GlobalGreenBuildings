@@ -1,0 +1,125 @@
+.body-idea {
+	overflow-y: initial;
+}
+header {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 999;
+    height: 74.4px;
+    overflow-y: initial;
+    min-height: initial;
+}
+.header-idea {
+
+}
+@media (min-width: 1024px) { 
+    .header-idea {
+        position: fixed;
+    }
+}
+.header_block-idea {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+    position: relative;
+
+}
+@media screen and (max-width: 1600px) and (min-width: 1025px) {
+	.header_block-idea {
+	    height: 100%;
+	/*    padding: 0px 50px 0px 50px; */
+	}
+}
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+	.header_block-idea {
+	    height: 100%;
+	/*    padding: 0px 50px 0px 50px; */
+	}
+}
+.header_nav-idea {
+	display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.logo-idea {
+	height: 112px;
+    margin-left: -105px;
+    position: absolute;
+    left: 50%;
+    top: -3px;
+    width: 207px;
+    background-image: url(../img//svg/GGB.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo-idea a {
+	display: block;
+    height: 126px;
+    position: absolute;
+    width: 207px;
+    z-index: 11;
+}
+.logo-idea span {
+	display: block;
+    position: absolute;
+    top: 77px;
+    height: 55px;
+    width: 100%;
+    overflow: hidden;
+    z-index: -2;
+    margin: 0 auto;
+}
+.logo-idea span i {
+	background: #fff;
+    display: block;
+    top: -141px;
+    position: relative;
+    margin: 0 auto;
+    zoom: 80%;
+    height: 188px;
+    width: 150px;
+    -webkit-border-radius: 93px;
+    -moz-border-radius: 93px;
+    -ms-border-radius: 93px;
+    border-radius: 93px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+.main-idea {
+	zoom: 80%;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    transition: all 0.4s linear; 
+	padding-top: 0px;
+}
+@media (min-width: 1024px) { 
+    .main-idea {
+        padding-top: 93px;
+    }
+}
+.logo {
+	height: 112px;
+    margin-left: -105px;
+    position: absolute;
+    left: 50%;
+    top: -3px;
+    width: 207px;
+    /* background-image: url(../img/logos_n.png); */
+    background-image: url(../img//svg/GGB.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.c-title-beneficial_model-idea-page {
+    padding-top: 50px;
+}
+@media (min-width: 768px) { 
+    .c-title-beneficial_model-idea-page {
+        padding-top: 50px;
+    }
+}

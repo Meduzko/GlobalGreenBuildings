@@ -1,0 +1,113 @@
+
+.r-tabs {
+    position: relative;
+}
+.r-tabs .tabs-content {
+    display: none;
+}
+
+.r-tabs .r-tabs-nav {
+    border-bottom: 1px solid #dddfde;
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.r-tabs .r-tabs-nav li {
+    margin: 0 25px;
+}
+
+.r-tabs .r-tabs-nav li a {
+    border-bottom: 4px solid transparent;
+    color: #404040;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    /*
+    -webkit-transition: border-color .3s ease-in-out, color .3s ease-in-out;
+    -moz-transition: border-color .3s ease-in-out, color .3s ease-in-out;
+    -o-transition: border-color .3s ease-in-out, color .3s ease-in-out;
+    transition: border-color .3s ease-in-out, color .3s ease-in-out;
+    */
+}
+
+.r-tabs .r-tabs-nav li.r-tabs-state-active a {
+    color: #805ed3;
+    border-color: #805ed3;
+}
+
+.r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.r-tabs .r-tabs-panel {
+    padding: 15px 15px 0px 15px;
+    display: none;
+}
+@media (min-width: 1800px) { 
+  .r-tabs .r-tabs-panel {
+      min-height: 1460px;
+  }
+}
+.r-tabs .r-tabs-accordion-title {
+   /* opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 100; */
+    display: none;
+    opacity: 0;
+
+}
+@media (min-width: 992px) {
+    .r-tabs .r-tabs-accordion-title {
+
+    }
+ }
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block;
+}
+
+.r-tabs .r-tabs-state-default h1 {
+    display: none
+}
+
+@media only screen and (max-width:768px) {
+    .r-tabs .r-tabs-nav {
+        display: none
+    }
+    .r-tabs .r-tabs-accordion-title {
+        opacity: 1;
+        position: inherit;
+        display: block !important;
+    }
+    .r-tabs .r-tabs-accordion-title a {
+        border-top: 1px solid #e4e7e7;
+        border-bottom: 1px solid #e4e7e7;
+        display: block;
+        margin-top: -1px;
+        padding: 15px 0 15px 30px;
+        text-transform: uppercase;
+    }
+    .r-tabs .r-tabs-accordion-title a:hover {
+        background: #e4e7e7
+    }
+    .r-tabs .r-tabs-accordion-title a:after {
+        content: '\e80b';
+        font-family: 'icon_font';
+        display: inline-block;
+        float: right;
+        padding: 0 20px 0 0;
+        font-size: 36px;
+        margin-top: -10px
+    }
+    .r-tabs .r-tabs-accordion-title.r-tabs-state-active a:after {
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        margin-top: -10px;
+        padding: 0 20px
+    }
+}
+
