@@ -2591,7 +2591,8 @@ footer .footer-block .contact-links li {
 
 }
 .owl_content {
-  width: 350.333px;
+ /* width: 350.333px; */
+ width: 355px;
   margin-top: 2px;
   margin-left: 2px;
   margin-bottom: 2px;
@@ -6674,7 +6675,7 @@ background-position: 50% 50%;
 
 }
 .services_title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .our-process-title {
 
@@ -6787,7 +6788,8 @@ background-position: 50% 50%;
     background-image: url(../img/back31_2.png);
     background-position: 23% -75%;
     background-repeat: no-repeat;
-    height: 100%;
+  /*  height: 100%; */
+    height: 815px;
 }
 
 /*@media (min-width: 1025px) {
@@ -8277,7 +8279,8 @@ div#voltage_item_first_chield {
     flex-grow: 1;
     /* margin-top: 40px; 
     position: absolute;*/
-    padding: 50px 0px 50px 30px;
+  /*  padding: 50px 0px 50px 30px; */
+    padding: 50px 30px;
 }
 .c-finance__list--item {
   display: -webkit-box;
@@ -8610,16 +8613,16 @@ div.sol_block div div.current {
   position: absolute;
 }
 .carousel_wraper {
-  /*max-width: 1120px; */
+/* max-width: 1200px; */
   max-width: 1140px;
-  width: 100%;
+  width: 100%; 
   margin: 0 auto;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 .carousel_navs {
     max-width: 1107px;
-    width: 20%;
+    width: 36%;
     margin: 0 auto;
     position: absolute;
     left: 0;
