@@ -9273,8 +9273,8 @@ p.default-text.top-default-text {
   }
 }
 .succsess_popup_container {
-  height: 670px;
-    /* z-index: 0; */
+  height: 100%;
+  padding: 0px 30px;
   position: absolute;
   top: 0;
   background-color: #f7f7f7;
@@ -9286,7 +9286,7 @@ p.default-text.top-default-text {
   /* padding-top: 147px; */
   max-width: 760px;
   margin: 0 auto;
-  margin-top: 195px;
+  margin-top: 80px;
 }
 .succsess_popup_body {
   /*max-width: 640px; */
@@ -9391,6 +9391,7 @@ p.default-text.top-default-text {
     -o-transition: background-color .3s ease-in-out,color .3s ease-in-out;
     transition: background-color .3s ease-in-out,color .3s ease-in-out;
     height: 62px;
+    line-height: 62px;
 }
 /*
 .appoitment_popup-button:active {

@@ -20,9 +20,9 @@ let transporter = nodemailer.createTransport({
     port: 465,
     secure: true, // secure:true for port 465, secure:false for port 587
     auth: {
-       // user: 'globalgreenbuildingsmailer@gmail.com',
-        user: 'globalgreenbuildings@gmail.com',
+        user: 'globalgreenbuildingsmailer@gmail.com',
         pass: '4pDcBocx'
+       
     }
 });
 
@@ -125,60 +125,6 @@ app.get('/sitemap.xml', function(req, res) { // send XML map
 });
 
 console.log(map);
-
-
-
-
-/*
-sitemap({
-  sitemap: 'normal.xml', // path for .XMLtoFile
-  robots: 'normal.txt', // path for .TXTtoFile
-  generate: app, // option or function, is the same
-  sitemapSubmission: '/normal.xml', // path of sitemap into robots
-  route: { // specific option for some route
-    '/': {
-      lastmod: '2014-06-19',
-      changefreq: 'always',
-      priority: 1.0,
-    },
-    '/admin': {
-      disallow: true, // write this route to robots.txt
-    },
-    '/nooo': {
-      lastmod: '2014-06-20',
-      changefreq: 'never',
-    }
-  },
-}).toFile(); // write sitemap.xml and robots.txt
-
-console.log('files wrote');
-*/
-
-
-
-/*
-var map = sitemap({
-  //generate: app
-  sitemap: 'sitemap.xml', // path for .XMLtoFile
-  robots: 'robots.txt', // path for .TXTtoFile
-  generate: app, // option or function, is the same
-  sitemapSubmission: '/sitemap.xml', // path of sitemap into robots
-  route: { // specific option for some route
-    '/': {
-      lastmod: '2014-06-19',
-      changefreq: 'always',
-      priority: 1.0,
-    },
-    '/admin': {
-      disallow: true, // write this route to robots.txt
-    },
-    '/nooo': {
-      lastmod: '2014-06-20',
-      changefreq: 'never',
-    }
-  },
-});
-*/
 
 
 
@@ -310,19 +256,6 @@ app.get('/legal.html',function(req,res){
   res.sendFile('legal.html',{ root: __dirname });
 });
 
-
-/*
-app.get('/sitemap.xml',function(req,res){
-  //res.sendFile('sitemap.xml', { root: __dirname });
-  res.sendFile('sitemap.xml');
-});
-*/
-/*
-app.get('/sitemap.xml',function(req,res){
-	res.set('Content-Type', 'text/xml');
-    res.sendFile(fs.readFileSync('sitemap.xml', {encoding: 'utf-8'},{ root: __dirname }));
-});   
-*/
 
 app.get('/robots.txt',function(req,res){
   res.sendFile('robots.txt',{ root: __dirname });

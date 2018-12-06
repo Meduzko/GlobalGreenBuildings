@@ -782,7 +782,9 @@
 
 <div class="appointment_button homepage__appointment_button">
     <div class="solution_button">
-        <a class="c-button c-button--more js-open-modal" id="open_appointment_button"><span id="appointment_button" class="c-button__inner">MAKE APPOINTMENT</span></a>
+        <a class="c-button c-button--more js-open-modal" id="open_appointment_button">
+            <span id="appointment_button" class="c-button__inner">MAKE APPOINTMENT</span>
+        </a>
     </div>
 </div>
 </div>
@@ -790,7 +792,7 @@
 <div class="appointment_container">
     <div class="appoitment_popup_back" id="popup_back"></div> 
     <div class="pop_container popup_modal" id="appointment_popup">
-        <form method="POST">
+        <form class="appointment-form">
             <div class="appoitment_popup-content">
                 <div class="close_img icon-font icon-cancel" id="close_popup""></div>
                 <div class="appoitment_popup-title">
@@ -827,7 +829,7 @@
                 </div> 
                 <div class="appoitment_popup_button-section">
                     <div class="appoitment_popup-button-wrapper">
-                        <button class="appoitment_popup-button" type="submit" id="appoitment_send" onclick="val_popup();">send</button> 
+                        <a class="appoitment_popup-button" type="" id="appoitment_send" >send</a> 
                     </div>
                 </div>
 
